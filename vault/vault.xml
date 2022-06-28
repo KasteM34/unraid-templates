@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>vault</Name>
-  <Repository>kastem34/unraid-vault</Repository>
-  <Registry>https://hub.docker.com/repository/docker/kastem34/unraid-vault</Registry>
+  <Repository>vault</Repository>
+  <Registry>https://hub.docker.com/_/vault</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
   <TemplateURL/>
   <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-vault-logo.png</Icon>
-  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <ExtraParams>--cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}},"listener": {"tcp": {"address": "0.0.0.0:8200", "tls_disable": 1}}, "ui": true}' vault server</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1656440165</DateInstalled>
+  <DateInstalled>1656445815</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
