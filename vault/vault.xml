@@ -13,11 +13,11 @@
   <Category>Security:</Category>
   <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
   <TemplateURL/>
-  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-vault-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/KasteM34/unraid-templates/main/vault/vault.png</Icon>
   <ExtraParams>--cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}},"listener": {"tcp": {"address": "0.0.0.0:8200", "tls_disable": 1}}, "ui": true}' vault server</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1656445815</DateInstalled>
+  <DateInstalled>1656454007</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
