@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>vault</Name>
+  <Repository>vault</Repository>
+  <Registry>https://hub.docker.com/_/vault</Registry>
+  <Network>tuxnet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/hashicorp/docker-vault</Project>
+  <Overview>Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
+  <TemplateURL/>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-vault-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1656429247</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Vault UI/API" Target="8200" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8200</Config>
+</Container>
