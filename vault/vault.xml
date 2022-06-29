@@ -9,7 +9,12 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/125455-support-vault/</Support>
   <Project>https://github.com/hashicorp/docker-vault</Project>
-  <Overview>Hashicorp Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log</Overview>
+  <Overview>Hashicorp Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log.&#xD;
+&#xD;
+For a complete documentation about vault, check&#xD;
+https://www.vaultproject.io/docs&#xD;
+&#xD;
+Example setup and usage in the forum support webpage.</Overview>
   <Category>Security:</Category>
   <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
   <TemplateURL/>
