@@ -14,14 +14,15 @@
   <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/KasteM34/unraid-templates/main/vault/vault.png</Icon>
-  <ExtraParams>--cap-add=IPC_LOCK -e 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}},"listener": {"tcp": {"address": "0.0.0.0:8200", "tls_disable": 1}}, "ui": true}' vault server</ExtraParams>
+  <ExtraParams>--cap-add=IPC_LOCK vault server</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1656454007</DateInstalled>
+  <DateInstalled>1656472080</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="file" Target="/vault/file" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/file/</Config>
+  <Config Name="file" Target="/vault/file" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/vault/file/</Config>
   <Config Name="logs" Target="/vault/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/logs/</Config>
-  <Config Name="Vault UI/API" Target="8200" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8200</Config>
+  <Config Name="Vault UI/API" Target="8200" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8200</Config>
+  <Config Name="VAULT_LOCAL_CONFIG" Target="VAULT_LOCAL_CONFIG" Default="" Mode="" Description="Vault  config, e.g. backend, listener, ui" Type="Variable" Display="always" Required="true" Mask="false">{"backend": {"file": {"path": "/vault/file"}},"listener": {"tcp": {"address": "0.0.0.0:8200", "tls_disable": 1}}, "ui": true}</Config>
 </Container>
