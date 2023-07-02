@@ -19,8 +19,8 @@ Example setup and usage in the forum support webpage.</Overview>
   <WebUI>http://[IP]:[PORT:8200]/ui</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/KasteM34/unraid-templates/main/vault/vault.png</Icon>
-  <ExtraParams>--cap-add=IPC_LOCK vault server</ExtraParams>
-  <PostArgs/>
+  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <PostArgs>server</PostArgs>
   <CPUset/>
   <DateInstalled>1656472080</DateInstalled>
   <DonateText/>
